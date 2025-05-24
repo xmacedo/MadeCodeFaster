@@ -1,11 +1,14 @@
 package com.xmacedo.problemStatement1;
 
+import com.xmacedo.Utils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TheSmarterApproach {
-    public static void main(String[] args) {
+    public TheSmarterApproach(ArrayList<Integer> arr, Integer target) {
+        System.out.printf("Problem 1: The Smarter approach!");
+        long startTime = System.currentTimeMillis();
         //Suppose the current number is num.
 
         //We want to find if there's any previous number such that:
@@ -22,8 +25,6 @@ public class TheSmarterApproach {
         //Then, we update the current number’s frequency in the map.
 
         int count = 0;
-        ArrayList<Integer> arr = new ArrayList<>();
-        Integer target = 0;
         Map<Integer, Integer> freqMap = new HashMap<>();
 
         for (int num : arr) {
@@ -45,6 +46,10 @@ public class TheSmarterApproach {
 
         //Time Complexity: O(n)
         //Space Complexity: O(n)
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        Utils.printResults("The Brute Force way", duration);
+        System.out.printf("END Problem 1!");
     }
     //# Performance testing
 
