@@ -7,8 +7,8 @@ public class TheBruteForceWay {
 
     //As a beginner, my first instinct was to use a nested loop.
     // We check every possible pair of elements and see if their sum equals the target.
-    public TheBruteForceWay(ArrayList<String> arr, String target) {
-        System.out.printf("Problem 1: The Brute Force way!");
+    public static Integer countPairs(ArrayList<Integer> arr, int target) {
+        System.out.println("Problem 1: The Brute Force way!");
         long startTime = System.currentTimeMillis();
         int count = 0;
         for (int i = 0; i < arr.size(); i++) {
@@ -27,8 +27,9 @@ public class TheBruteForceWay {
         // - Terribly slow for large inputs.
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        Utils.printResults("The Brute Force way", duration);
-        System.out.printf("END Problem 1!");
+        Utils.printResults("The Brute Force way", count, duration);
+        System.out.println("END Problem 1!\n");
+        return count;
     }
     //# Performance testing
     //Let’s say the array has 10,000 elements.

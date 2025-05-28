@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TheSmarterApproach {
-    public TheSmarterApproach(ArrayList<Integer> arr, Integer target) {
+
+    public static Integer countPairs(ArrayList<Integer> arr, int target) {
         System.out.printf("Problem 1: The Smarter approach!");
         long startTime = System.currentTimeMillis();
         //Suppose the current number is num.
@@ -48,8 +49,10 @@ public class TheSmarterApproach {
         //Space Complexity: O(n)
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        Utils.printResults("The Brute Force way", duration);
+        Utils.printResults("The Smarter Approach ", count, duration);
         System.out.printf("END Problem 1!");
+
+        return count;
     }
     //# Performance testing
 
@@ -61,6 +64,4 @@ public class TheSmarterApproach {
     //That’s more than 75 times faster.
 
     //And we didn’t do anything “advanced” — just used the right data structure and rethought the logic.
-
-
 }
