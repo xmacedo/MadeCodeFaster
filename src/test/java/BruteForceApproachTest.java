@@ -79,7 +79,7 @@ public class BruteForceApproachTest {
         // run the method
         int result = TheBruteForceWay.countPairs(arr, target);
 
-        // Valida apenas que o código roda sem erros
+        // Show the results, of the pairs are found
         System.out.println("Total of pairs found: " + result);
 
         assertTrue(result >= 0);
