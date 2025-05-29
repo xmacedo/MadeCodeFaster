@@ -2,7 +2,9 @@ import com.xmacedo.problemStatement1.TheBruteForceWay;
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class BruteForceApproachTest {
 
@@ -59,6 +61,28 @@ public class BruteForceApproachTest {
         int result = TheBruteForceWay.countPairs(arr, target);
 
         assertEquals(2, result);
+    }
+
+    @Test
+    public void largeArrayTest() {
+        int arraySize = 100_000;
+        int target = 100;
+
+        ArrayList<Integer> arr = new ArrayList<>(arraySize);
+        Random random = new Random(42);
+
+        // Fills the array with random numbers between 0 and 100
+        for (int i = 0; i < arraySize; i++) {
+            arr.add(random.nextInt(101));
+        }
+
+        // run the method
+        int result = TheBruteForceWay.countPairs(arr, target);
+
+        // Valida apenas que o código roda sem erros
+        System.out.println("Total of pairs found: " + result);
+
+        assertTrue(result >= 0);
     }
 
 }
