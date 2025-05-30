@@ -8,7 +8,7 @@ import java.util.Map;
 public class TheSmarterApproach {
 
     public static Integer countPairs(ArrayList<Integer> arr, int target) {
-        System.out.printf("Problem 1: The Smarter approach!");
+        System.out.println("Problem 1: The Smarter approach!");
         long startTime = System.currentTimeMillis();
         //Suppose the current number is num.
 
@@ -50,7 +50,7 @@ public class TheSmarterApproach {
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
         Utils.printResults("The Smarter Approach ", count, duration);
-        System.out.printf("END Problem 1!");
+        System.out.println("END Problem 1!");
 
         return count;
     }
