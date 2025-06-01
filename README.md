@@ -29,5 +29,9 @@ And we didn’t do anything “advanced” — just used the right data structur
    - Brute force: 10 s ~
    - Smater approach: 0.2 s ~
  - 1.000.000
- - Brute force:  s ~
+ - Brute force:
+   - 'The Brute Force way' to find [655558585]took the duration of: 00:19:09.408
+   - Total of pairs found: 655558585
  - Smater approach: 0.2 s ~
+   - 'The Smarter Approach ' to find [655558585]took the duration of: 00:00:00.086 
+   - Total of pairs found: 655558585
