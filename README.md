@@ -24,3 +24,10 @@ That’s more than 75 times faster.
 
 And we didn’t do anything “advanced” — just used the right data structure and rethought the logic.
 
+### Results
+ - 100.000
+   - Brute force: 10 s ~
+   - Smater approach: 0.2 s ~
+ - 1.000.000
+ - Brute force:  s ~
+ - Smater approach: 0.2 s ~

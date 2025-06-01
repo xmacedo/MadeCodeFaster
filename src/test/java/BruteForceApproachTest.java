@@ -65,7 +65,7 @@ public class BruteForceApproachTest {
 
     @Test
     public void largeArrayTest() {
-        int arraySize = 100_000;
+        int arraySize = 1_000_000;
         int target = 100;
 
         ArrayList<Integer> arr = new ArrayList<>(arraySize);

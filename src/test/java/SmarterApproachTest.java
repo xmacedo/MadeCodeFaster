@@ -1,4 +1,3 @@
-import com.xmacedo.problemStatement1.TheBruteForceWay;
 import com.xmacedo.problemStatement1.TheSmarterApproach;
 import org.junit.Test;
 import java.util.ArrayList;
